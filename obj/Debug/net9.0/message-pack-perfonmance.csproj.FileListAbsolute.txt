@@ -1,0 +1,14 @@
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\bin\Debug\net9.0\message-pack-perfonmance.exe
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\bin\Debug\net9.0\message-pack-perfonmance.deps.json
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\bin\Debug\net9.0\message-pack-perfonmance.runtimeconfig.json
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\bin\Debug\net9.0\message-pack-perfonmance.dll
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\bin\Debug\net9.0\message-pack-perfonmance.pdb
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\obj\Debug\net9.0\message-pack-perfonmance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\obj\Debug\net9.0\message-pack-perfonmance.AssemblyInfoInputs.cache
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\obj\Debug\net9.0\message-pack-perfonmance.AssemblyInfo.cs
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\obj\Debug\net9.0\message-pack-perfonmance.csproj.CoreCompileInputs.cache
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\obj\Debug\net9.0\message-pack-perfonmance.dll
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\obj\Debug\net9.0\refint\message-pack-perfonmance.dll
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\obj\Debug\net9.0\message-pack-perfonmance.pdb
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\obj\Debug\net9.0\message-pack-perfonmance.genruntimeconfig.cache
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\obj\Debug\net9.0\ref\message-pack-perfonmance.dll
