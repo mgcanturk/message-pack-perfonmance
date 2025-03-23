@@ -88,3 +88,4 @@ C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pac
 C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\obj\Release\net9.0\message-pack-perfonmance.pdb
 C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\obj\Release\net9.0\message-pack-perfonmance.genruntimeconfig.cache
 C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\obj\Release\net9.0\ref\message-pack-perfonmance.dll
+C:\Users\mhmtg\OneDrive\Masaüstü\Projects\message-pack-perfonmance\message-pack-perfonmance\obj\Release\net9.0\message-pack-perfonmance.sourcelink.json

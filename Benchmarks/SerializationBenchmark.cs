@@ -5,13 +5,16 @@ using JsonBenchmarks.Models;
 
 namespace JsonBenchmarks.Benchmarks
 {
-    [MemoryDiagnoser]
+  [MemoryDiagnoser]
     public class SerializationBenchmark
     {
         [Params(10, 20, 30)]
         public int ProductCount;
 
         private List<Product> products;
+        private byte[] serializedMessagePack;
+        private string serializedNewtonsoftJson;
+        private string serializedSystemTextJson;
 
         [GlobalSetup]
         public void Setup()
@@ -74,6 +77,11 @@ namespace JsonBenchmarks.Benchmarks
                     ]
                 });
             }
+
+            // Ön işleme ile serialize edilen verileri hazırlayalım
+            serializedMessagePack = MessagePackSerializer.Serialize(products);
+            serializedNewtonsoftJson = JsonConvert.SerializeObject(products);
+            serializedSystemTextJson = System.Text.Json.JsonSerializer.Serialize(products);
         }
 
         [Benchmark]
@@ -97,22 +105,19 @@ namespace JsonBenchmarks.Benchmarks
         [Benchmark]
         public List<Product> DeserializeWithMessagePack()
         {
-            var bytes = MessagePackSerializer.Serialize(products);
-            return MessagePackSerializer.Deserialize<List<Product>>(bytes);
+            return MessagePackSerializer.Deserialize<List<Product>>(serializedMessagePack);
         }
 
         [Benchmark]
         public List<Product> DeserializeWithNewtonsoftJson()
         {
-            var json = JsonConvert.SerializeObject(products);
-            return JsonConvert.DeserializeObject<List<Product>>(json)!;
+            return JsonConvert.DeserializeObject<List<Product>>(serializedNewtonsoftJson)!;
         }
 
         [Benchmark]
         public List<Product> DeserializeWithSystemTextJson()
         {
-            var json = System.Text.Json.JsonSerializer.Serialize(products);
-            return System.Text.Json.JsonSerializer.Deserialize<List<Product>>(json)!;
+            return System.Text.Json.JsonSerializer.Deserialize<List<Product>>(serializedSystemTextJson)!;
         }
     }
 }

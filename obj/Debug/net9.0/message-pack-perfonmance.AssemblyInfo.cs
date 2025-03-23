@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("message-pack-perfonmance")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd2db03fc0e7f7038ddc1c9f839d2f49fc3eaf9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("message-pack-perfonmance")]
 [assembly: System.Reflection.AssemblyTitleAttribute("message-pack-perfonmance")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
