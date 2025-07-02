@@ -13,6 +13,7 @@ namespace JsonBenchmarks.Benchmarks
 
         private List<Product> products;
         private byte[] serializedMessagePack;
+        private byte[] serializedMessagePackLZ4;
         private string serializedNewtonsoftJson;
         private string serializedSystemTextJson;
 
@@ -77,9 +78,10 @@ namespace JsonBenchmarks.Benchmarks
                     ]
                 });
             }
-
+            var options = MessagePackSerializerOptions.Standard.WithCompression(MessagePackCompression.Lz4BlockArray);
             // Ön işleme ile serialize edilen verileri hazırlayalım
             serializedMessagePack = MessagePackSerializer.Serialize(products);
+            serializedMessagePackLZ4 = MessagePackSerializer.Serialize(products, options);
             serializedNewtonsoftJson = JsonConvert.SerializeObject(products);
             serializedSystemTextJson = System.Text.Json.JsonSerializer.Serialize(products);
         }
@@ -88,6 +90,13 @@ namespace JsonBenchmarks.Benchmarks
         public byte[] SerializeWithMessagePack()
         {
             return MessagePackSerializer.Serialize(products);
+        }
+
+        [Benchmark]
+        public byte[] SerializeWithMessagePackLZ4()
+        {
+            var options = MessagePackSerializerOptions.Standard.WithCompression(MessagePackCompression.Lz4BlockArray);
+            return MessagePackSerializer.Serialize(products, options);
         }
 
         [Benchmark]
@@ -106,6 +115,13 @@ namespace JsonBenchmarks.Benchmarks
         public List<Product> DeserializeWithMessagePack()
         {
             return MessagePackSerializer.Deserialize<List<Product>>(serializedMessagePack);
+        }
+
+        [Benchmark]
+        public List<Product> DeserializeWithMessagePackLZ4()
+        {
+            var options = MessagePackSerializerOptions.Standard.WithCompression(MessagePackCompression.Lz4BlockArray);
+            return MessagePackSerializer.Deserialize<List<Product>>(serializedMessagePack, options);
         }
 
         [Benchmark]

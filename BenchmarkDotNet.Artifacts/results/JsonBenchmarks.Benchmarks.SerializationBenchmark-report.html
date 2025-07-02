@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>JsonBenchmarks.Benchmarks.SerializationBenchmark-20250323-232635</title>
+<title>JsonBenchmarks.Benchmarks.SerializationBenchmark-20250323-234909</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -24,24 +24,30 @@ BenchmarkDotNet v0.14.0, Windows 11 (10.0.26100.3476)
 <table>
 <thead><tr><th>Method                 </th><th>ProductCount</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th><th>Gen0</th><th>Gen1</th><th>Allocated</th>
 </tr>
-</thead><tbody><tr><td>SerializeWithMessagePack</td><td>10</td><td>9.349 &mu;s</td><td>0.1796 &mu;s</td><td>0.2069 &mu;s</td><td>9.359 &mu;s</td><td>1.2512</td><td>-</td><td>7.73 KB</td>
-</tr><tr><td>SerializeWithNewtonsoftJson</td><td>10</td><td>42.109 &mu;s</td><td>0.6174 &mu;s</td><td>0.5775 &mu;s</td><td>42.121 &mu;s</td><td>11.4746</td><td>1.0986</td><td>70.73 KB</td>
-</tr><tr><td>SerializeWithSystemTextJson</td><td>10</td><td>18.063 &mu;s</td><td>0.2041 &mu;s</td><td>0.1909 &mu;s</td><td>18.137 &mu;s</td><td>4.0283</td><td>-</td><td>24.8 KB</td>
-</tr><tr><td>DeserializeWithMessagePack</td><td>10</td><td>16.910 &mu;s</td><td>0.1844 &mu;s</td><td>0.1725 &mu;s</td><td>16.887 &mu;s</td><td>2.6550</td><td>0.1221</td><td>16.3 KB</td>
-</tr><tr><td>DeserializeWithNewtonsoftJson</td><td>10</td><td>63.591 &mu;s</td><td>1.2643 &mu;s</td><td>1.2984 &mu;s</td><td>63.674 &mu;s</td><td>5.0049</td><td>0.2441</td><td>30.94 KB</td>
-</tr><tr><td>DeserializeWithSystemTextJson</td><td>10</td><td>36.168 &mu;s</td><td>0.7205 &mu;s</td><td>0.7399 &mu;s</td><td>36.173 &mu;s</td><td>3.0518</td><td>0.1831</td><td>18.87 KB</td>
-</tr><tr><td>SerializeWithMessagePack</td><td>20</td><td>17.412 &mu;s</td><td>0.2719 &mu;s</td><td>0.2410 &mu;s</td><td>17.431 &mu;s</td><td>2.5024</td><td>-</td><td>15.43 KB</td>
-</tr><tr><td>SerializeWithNewtonsoftJson</td><td>20</td><td>99.852 &mu;s</td><td>8.0762 &mu;s</td><td>23.8129 &mu;s</td><td>84.764 &mu;s</td><td>22.7051</td><td>3.7842</td><td>139.59 KB</td>
-</tr><tr><td>SerializeWithSystemTextJson</td><td>20</td><td>38.128 &mu;s</td><td>0.6174 &mu;s</td><td>0.5775 &mu;s</td><td>38.226 &mu;s</td><td>7.9346</td><td>-</td><td>48.8 KB</td>
-</tr><tr><td>DeserializeWithMessagePack</td><td>20</td><td>32.955 &mu;s</td><td>0.3013 &mu;s</td><td>0.2516 &mu;s</td><td>32.907 &mu;s</td><td>5.3101</td><td>0.4883</td><td>32.55 KB</td>
-</tr><tr><td>DeserializeWithNewtonsoftJson</td><td>20</td><td>122.015 &mu;s</td><td>1.2851 &mu;s</td><td>1.2020 &mu;s</td><td>122.037 &mu;s</td><td>9.6436</td><td>1.0986</td><td>59.65 KB</td>
-</tr><tr><td>DeserializeWithSystemTextJson</td><td>20</td><td>69.794 &mu;s</td><td>1.0942 &mu;s</td><td>1.0235 &mu;s</td><td>69.662 &mu;s</td><td>5.8594</td><td>0.6104</td><td>36.33 KB</td>
-</tr><tr><td>SerializeWithMessagePack</td><td>30</td><td>26.140 &mu;s</td><td>0.3920 &mu;s</td><td>0.3667 &mu;s</td><td>26.126 &mu;s</td><td>3.7537</td><td>-</td><td>23.13 KB</td>
-</tr><tr><td>SerializeWithNewtonsoftJson</td><td>30</td><td>143.224 &mu;s</td><td>12.5101 &mu;s</td><td>36.2940 &mu;s</td><td>123.712 &mu;s</td><td>31.0059</td><td>5.1270</td><td>192.8 KB</td>
-</tr><tr><td>SerializeWithSystemTextJson</td><td>30</td><td>54.540 &mu;s</td><td>0.6525 &mu;s</td><td>0.5784 &mu;s</td><td>54.565 &mu;s</td><td>11.7188</td><td>-</td><td>72.77 KB</td>
-</tr><tr><td>DeserializeWithMessagePack</td><td>30</td><td>49.523 &mu;s</td><td>0.6957 &mu;s</td><td>0.6167 &mu;s</td><td>49.663 &mu;s</td><td>7.9346</td><td>1.0376</td><td>48.8 KB</td>
-</tr><tr><td>DeserializeWithNewtonsoftJson</td><td>30</td><td>188.147 &mu;s</td><td>2.3178 &mu;s</td><td>2.1681 &mu;s</td><td>188.987 &mu;s</td><td>14.1602</td><td>1.9531</td><td>88.09 KB</td>
-</tr><tr><td>DeserializeWithSystemTextJson</td><td>30</td><td>104.104 &mu;s</td><td>1.2349 &mu;s</td><td>1.1552 &mu;s</td><td>104.408 &mu;s</td><td>8.6670</td><td>1.2207</td><td>53.52 KB</td>
+</thead><tbody><tr><td>SerializeWithMessagePack</td><td>10</td><td>9.082 &mu;s</td><td>0.1725 &mu;s</td><td>0.1987 &mu;s</td><td>9.069 &mu;s</td><td>1.2512</td><td>-</td><td>7.73 KB</td>
+</tr><tr><td>SerializeWithMessagePackLZ4</td><td>10</td><td>12.872 &mu;s</td><td>0.2145 &mu;s</td><td>0.1902 &mu;s</td><td>12.846 &mu;s</td><td>0.3204</td><td>-</td><td>2.02 KB</td>
+</tr><tr><td>SerializeWithNewtonsoftJson</td><td>10</td><td>42.438 &mu;s</td><td>0.4327 &mu;s</td><td>0.3836 &mu;s</td><td>42.494 &mu;s</td><td>11.4746</td><td>1.0986</td><td>70.73 KB</td>
+</tr><tr><td>SerializeWithSystemTextJson</td><td>10</td><td>17.828 &mu;s</td><td>0.2707 &mu;s</td><td>0.2532 &mu;s</td><td>17.911 &mu;s</td><td>4.0283</td><td>-</td><td>24.8 KB</td>
+</tr><tr><td>DeserializeWithMessagePack</td><td>10</td><td>16.653 &mu;s</td><td>0.2190 &mu;s</td><td>0.2048 &mu;s</td><td>16.683 &mu;s</td><td>2.6550</td><td>0.1221</td><td>16.3 KB</td>
+</tr><tr><td>DeserializeWithMessagePackLZ4</td><td>10</td><td>16.803 &mu;s</td><td>0.2165 &mu;s</td><td>0.2025 &mu;s</td><td>16.857 &mu;s</td><td>2.6550</td><td>0.1526</td><td>16.36 KB</td>
+</tr><tr><td>DeserializeWithNewtonsoftJson</td><td>10</td><td>63.276 &mu;s</td><td>1.0714 &mu;s</td><td>1.0022 &mu;s</td><td>63.437 &mu;s</td><td>5.0049</td><td>0.2441</td><td>30.94 KB</td>
+</tr><tr><td>DeserializeWithSystemTextJson</td><td>10</td><td>34.304 &mu;s</td><td>0.4684 &mu;s</td><td>0.3911 &mu;s</td><td>34.370 &mu;s</td><td>3.0518</td><td>0.1831</td><td>18.87 KB</td>
+</tr><tr><td>SerializeWithMessagePack</td><td>20</td><td>17.466 &mu;s</td><td>0.2133 &mu;s</td><td>0.1995 &mu;s</td><td>17.496 &mu;s</td><td>2.5024</td><td>-</td><td>15.43 KB</td>
+</tr><tr><td>SerializeWithMessagePackLZ4</td><td>20</td><td>23.817 &mu;s</td><td>0.2357 &mu;s</td><td>0.2205 &mu;s</td><td>23.866 &mu;s</td><td>0.5493</td><td>-</td><td>3.41 KB</td>
+</tr><tr><td>SerializeWithNewtonsoftJson</td><td>20</td><td>82.851 &mu;s</td><td>1.1444 &mu;s</td><td>1.0705 &mu;s</td><td>83.114 &mu;s</td><td>22.7051</td><td>3.7842</td><td>139.6 KB</td>
+</tr><tr><td>SerializeWithSystemTextJson</td><td>20</td><td>36.496 &mu;s</td><td>0.6721 &mu;s</td><td>0.6287 &mu;s</td><td>36.609 &mu;s</td><td>7.9346</td><td>-</td><td>48.77 KB</td>
+</tr><tr><td>DeserializeWithMessagePack</td><td>20</td><td>33.382 &mu;s</td><td>0.4473 &mu;s</td><td>0.4184 &mu;s</td><td>33.408 &mu;s</td><td>5.3101</td><td>0.4883</td><td>32.55 KB</td>
+</tr><tr><td>DeserializeWithMessagePackLZ4</td><td>20</td><td>33.472 &mu;s</td><td>0.5260 &mu;s</td><td>0.4663 &mu;s</td><td>33.701 &mu;s</td><td>5.3101</td><td>0.5493</td><td>32.61 KB</td>
+</tr><tr><td>DeserializeWithNewtonsoftJson</td><td>20</td><td>126.017 &mu;s</td><td>1.4790 &mu;s</td><td>1.3834 &mu;s</td><td>125.722 &mu;s</td><td>9.5215</td><td>0.9766</td><td>59.65 KB</td>
+</tr><tr><td>DeserializeWithSystemTextJson</td><td>20</td><td>70.774 &mu;s</td><td>1.0650 &mu;s</td><td>0.9962 &mu;s</td><td>70.674 &mu;s</td><td>5.8594</td><td>0.6104</td><td>36.33 KB</td>
+</tr><tr><td>SerializeWithMessagePack</td><td>30</td><td>26.489 &mu;s</td><td>0.3686 &mu;s</td><td>0.3267 &mu;s</td><td>26.511 &mu;s</td><td>3.7537</td><td>-</td><td>23.13 KB</td>
+</tr><tr><td>SerializeWithMessagePackLZ4</td><td>30</td><td>36.281 &mu;s</td><td>0.5140 &mu;s</td><td>0.4808 &mu;s</td><td>36.288 &mu;s</td><td>0.7935</td><td>-</td><td>4.88 KB</td>
+</tr><tr><td>SerializeWithNewtonsoftJson</td><td>30</td><td>122.039 &mu;s</td><td>0.8267 &mu;s</td><td>0.7328 &mu;s</td><td>122.082 &mu;s</td><td>31.0059</td><td>5.1270</td><td>192.8 KB</td>
+</tr><tr><td>SerializeWithSystemTextJson</td><td>30</td><td>56.447 &mu;s</td><td>0.5092 &mu;s</td><td>0.4514 &mu;s</td><td>56.511 &mu;s</td><td>11.7188</td><td>-</td><td>72.74 KB</td>
+</tr><tr><td>DeserializeWithMessagePack</td><td>30</td><td>49.980 &mu;s</td><td>0.7101 &mu;s</td><td>0.6295 &mu;s</td><td>49.920 &mu;s</td><td>7.9346</td><td>1.0376</td><td>48.8 KB</td>
+</tr><tr><td>DeserializeWithMessagePackLZ4</td><td>30</td><td>52.084 &mu;s</td><td>0.9725 &mu;s</td><td>2.3114 &mu;s</td><td>51.193 &mu;s</td><td>7.9346</td><td>1.0986</td><td>48.86 KB</td>
+</tr><tr><td>DeserializeWithNewtonsoftJson</td><td>30</td><td>191.749 &mu;s</td><td>2.5023 &mu;s</td><td>1.9536 &mu;s</td><td>191.746 &mu;s</td><td>14.1602</td><td>1.9531</td><td>88.09 KB</td>
+</tr><tr><td>DeserializeWithSystemTextJson</td><td>30</td><td>134.821 &mu;s</td><td>10.7527 &mu;s</td><td>31.7047 &mu;s</td><td>128.287 &mu;s</td><td>8.6670</td><td>1.2207</td><td>53.52 KB</td>
 </tr></tbody></table>
 </body>
 </html>
